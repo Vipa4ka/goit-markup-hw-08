@@ -1,0 +1,45 @@
+.work {
+  display: none;
+
+  @media screen and (min-width: 768px){
+    padding: 0 0 94px;
+  }
+
+   
+}
+.work-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.kinds__foto {
+  // display: flex;
+  position: relative;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.kinds__text {
+  // display: inline-block;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 27px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $background-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
