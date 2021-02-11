@@ -20,32 +20,46 @@
             <div class="container main">
                 <nav class="com"> 
                     <a href="./" class="logo">Web<span class="header-logo">Studio</span></a>
-                    <ul class="siteNav">
-                        <li class="siteNav__item"><a href="./index.html" class="siteNav__link siteNav__link--active">Студия</a> </li>
-                        <li class="siteNav__item"><a href="./portfolio.html" class="siteNav__link">Портфолио</a> </li>
-                        <li class="siteNav__item"><a href="" class="siteNav__link">Контакты</a> </li>
-                    </ul>
+                    <button type="button" class="menu-button is-open" 
+                    aria-controls="menu-conteiner"  data-menu-button >
+                        <svg width="40" height="40" aria-label="Переключатель моб меню">
+                            <use class="icon-menu" href=".//image/sprite.svg#icon-menu_40px"></use>
+                            <use class="icon-close" href=".//image/sprite.svg#icon-close_40px"></use>
+                        </svg>                        
+                                                
+                    </button>
+                    <div class="menu-conteiner" id="menu-conteiner" data-menu>
+                        <ul class="siteNav">
+                            <li class="siteNav__item"><a href="./index.html" class="siteNav__link siteNav__link--active">Студия</a> </li>
+                            <li class="siteNav__item"><a href="./portfolio.html" class="siteNav__link">Портфолио</a> </li>
+                            <li class="siteNav__item"><a href="" class="siteNav__link">Контакты</a> </li>
+                        </ul>
+                        <address class="address">
+                            <ul class="authNav">
+                                <li class="authNav__item">
+                                    <a href="mailto:info@devstudio.com" class="authNav__dispatch">
+                                        <svg class="authNav__icon" width="16" height="12">
+                                            <use href=".//image/sprite.svg#icon-envelope"></use>
+                                        </svg>
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                                <li class="authNav__item">
+                                    <a href="tel:+380961111111" class="authNav__dispatch">
+                                        <svg class="authNav__icon" width="10" height="16">
+                                            <use href=".//image/sprite.svg#icon-smartphone"></use>
+                                        </svg>
+                                        +38 096 111 11 11
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>                   
+                        
+                    </div>
+        
+                    
                 </nav>
-                <address class="address">
-                    <ul class="authNav">
-                        <li class="authNav__item">
-                            <a href="mailto:info@devstudio.com" class="authNav__dispatch">
-                                <svg class="authNav__icon" width="16" height="12">
-                                    <use href=".//image/sprite.svg#icon-envelope"></use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="authNav__item">
-                            <a href="tel:+380961111111" class="authNav__dispatch">
-                                <svg class="authNav__icon" width="10" height="16">
-                                    <use href=".//image/sprite.svg#icon-smartphone"></use>
-                                </svg>
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                </address>
+                
             </div>
         </header>
         <main>
@@ -442,5 +456,6 @@
     
        <!-- JS       -->
         <script src="./js/modal.js"></script>
+        <script src="./js/mobmenu.js"></script>
     </body>
 </html>

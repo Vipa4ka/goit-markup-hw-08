@@ -19,9 +19,16 @@
   padding: 10px 32px;
 }
 
+
+
+
 .button--form {
   padding: 10px 56px;
-  margin: 30px 163px 40px 165px;
+  @media screen and (min-width: 1200px){
+    margin: 30px 163px 40px 165px;
+    
+  }
+ 
 }
 
 .button--subscription {
