@@ -3,38 +3,18 @@
   flex-wrap: wrap;
   margin: -4px;
   margin-bottom: 40px;
-  
-  // width: 362px;
-  // margin: 0 103px 0 15px;
-  // margin-bottom: 15px;
-  // justify-content: center;
-  // margin: 60px 103px 40px 15px ;
-  // width: calc((100% - 32px) / 5);
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
-  }  
-
-  // .filter__button{
-  //   margin: 8px;
-  //   width: calc((100% - 8px *2) / 3);
-
-  // }
-  
+  }
 }
-// .filter__button:not(:last-child) {
-  
-
-  
-//   margin-right: 8px;
-// }
 
 .button--navig {
   display: flex;

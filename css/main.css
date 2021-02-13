@@ -79,21 +79,28 @@ button {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .logo {
     padding: 26px 0;
+    font-size: 24px;
+    line-height: 1.16;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding: 0;
+    font-size: 26px;
+    line-height: 1.19;
   }
+}
+
+.page-header {
+  position: relative;
+}
+
+.main {
+  border-bottom: 1px solid #ececec;
 }
 
 .com {
@@ -106,23 +113,12 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .com {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    min-height: 60px;
   }
-}
-
-.page-header {
-  position: relative;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-logo {
@@ -139,6 +135,16 @@ button {
   background-color: transparent;
 }
 
+.menu-button:focus, .menu-button:hover {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .icon-menu {
   display: none;
 }
@@ -151,15 +157,18 @@ button {
   display: block;
 }
 
-.menu-conteiner {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  left: 0;
-  background-color: #ffffff;
-  padding-bottom: 60px;
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .menu-conteiner {
+    display: none;
+    text-align: center;
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    height: 393px;
+  }
 }
 
 .menu-conteiner.is-open {
@@ -168,11 +177,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .menu-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    padding: 0;
+    display: contents;
   }
 }
 
@@ -192,21 +197,11 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 88px;
+    padding: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .siteNav {
-    margin-left: 93px;
-  }
-}
-
-.siteNav__item {
-  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -221,11 +216,13 @@ button {
 
 @media screen and (min-width: 768px) {
   .siteNav__item:not(:last-child) {
+    padding-bottom: 0;
     margin-right: 50px;
   }
 }
 
 .siteNav__link {
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.16;
@@ -260,20 +257,22 @@ button {
   position: absolute;
   width: 100%;
   height: 4px;
-  top: 46px;
+  top: 30px;
+  left: 0;
   border-radius: 2px;
   background-color: #2196f3;
 }
 
-/*------------------authNav------------------*/
-.address {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .siteNav__link--active::after {
+    top: 46px;
+  }
 }
 
+/*------------------authNav------------------*/
 @media screen and (min-width: 768px) {
   .authNav {
     display: block;
-    text-align: start;
   }
 }
 
@@ -289,8 +288,15 @@ button {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .authNav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .authNav__item:not(:last-child) {
+    margin: 0;
     margin-right: 30px;
   }
 }
@@ -312,9 +318,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .authNav__dispatch {
-    padding: 32px 0;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 
@@ -323,11 +328,18 @@ button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
 .authNav__icon {
   margin-right: 10px;
+  fill: currentColor;
+}
+
+.svg-menu {
   fill: currentColor;
 }
 
@@ -399,7 +411,7 @@ button {
   margin: 40px 0 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.50;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -524,7 +536,7 @@ button {
 }
 
 .checkbox__svg::before {
-  content: "";
+  content: '';
   display: inline-block;
   margin-right: 7px;
   height: 15px;
@@ -668,23 +680,13 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .kinds {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 .features__kind {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .features__kind {
-    width: calc((100% - 15px *4) / 2);
+    width: calc((100% - 15px * 4) / 2);
     margin: 15px;
   }
 }
@@ -692,7 +694,7 @@ button {
 @media screen and (min-width: 1200px) {
   .features__kind {
     margin: 15px;
-    width: calc((100% - 15px*8) / 4);
+    width: calc((100% - 15px * 8) / 4);
   }
 }
 
@@ -747,8 +749,9 @@ button {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .work {
+    display: block;
     padding: 0 0 94px;
   }
 }
@@ -762,6 +765,19 @@ button {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.kinds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .kinds {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .kinds__foto {
@@ -791,6 +807,12 @@ button {
   padding: 60px 0;
   color: #757575;
   background: #f5f4fa;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 
 .team h2,
@@ -836,13 +858,13 @@ h3 {
 @media screen and (min-width: 768px) {
   .team__card {
     margin: 15px;
-    width: calc((100% - 15px *4) / 2);
+    width: calc((100% - 15px * 4) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__card {
-    width: calc((100% - 15px *8) / 4);
+    width: calc((100% - 15px * 8) / 4);
   }
 }
 
@@ -1111,6 +1133,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .subscription {
+    margin: 0;
     margin-left: 93px;
   }
 }
@@ -1154,6 +1177,7 @@ h3 {
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,26 +1,22 @@
 /*--------- подвал-------------- */
-.navi {  
+.navi {
   padding: 60px 0;
   background: $background-hero;
 }
 .foot {
-  @media screen and (max-width: 1199px){
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
-  
 
-
-  @media screen and (min-width: 1200px){
-    display: flex;     
+  @media screen and (min-width: 1200px) {
+    display: flex;
     align-items: baseline;
-  } 
+  }
 }
 
 .logo-footer {
   color: $primary-bg-color;
   padding: 0;
-   
-  
 }
 
 /*--------- cell------------- */
@@ -31,20 +27,16 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     text-align: left;
-  } 
-
-  
+  }
 }
 
 .cell__group {
-  // display: block;
   font-style: normal;
   color: $info-color;
 }
 .cell__address {
-  // display: block;
   font-style: normal;
   color: $primary-bg-color;
 }
@@ -69,32 +61,27 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px){
-    margin: 0;    
+  @media screen and (min-width: 768px) {
+    margin: 0;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-left: 70px;
-  } 
-
-  
-  
+  }
 }
 .social-text {
   margin-bottom: 20px;
-   
 }
-  
 
 /*--------- subscription-------------- */
 
 .subscription {
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-top: 60px;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
+    margin: 0;
     margin-left: 93px;
   }
-  
 }
 .subscription__text {
   font-weight: 700;
@@ -106,11 +93,10 @@
 }
 
 .subscription__form {
-  
   color: rgba(255, 255, 255, 0.6);
   background: $background-hero;
   border-radius: 4px;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     display: inline-flex;
   }
 }
@@ -118,8 +104,8 @@
 .subscription__mail {
   resize: none;
   margin-bottom: 20px;
-  padding: 15px 0 15px 16px; 
-  width: 100%; 
+  padding: 15px 0 15px 16px;
+  width: 100%;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -129,19 +115,17 @@
   color: rgba(255, 255, 255, 0.6);
   background: $background-hero;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  // border-radius: 4px;
+  border-radius: 4px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     margin: auto;
     margin-bottom: 20px;
     width: 450px;
-
-  }  
-  @media screen and (min-width: 1200px){
+  }
+  @media screen and (min-width: 1200px) {
     width: 358px;
-  }  
+  }
 }
 
 .subscription__svg {
@@ -149,26 +133,21 @@
   fill: $primary-bg-color;
 }
 
-.pad{
-  @media screen and (min-width: 480px){
+.pad {
+  @media screen and (min-width: 480px) {
     text-align: center;
     padding: 0;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     text-align: left;
-  } 
-  
-  
+  }
 }
-.footer-logo{
-  @media screen and (min-width: 768px) and  (max-width: 1199px){
+.footer-logo {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     display: flex;
-  } 
-
-  
+  }
 }
-

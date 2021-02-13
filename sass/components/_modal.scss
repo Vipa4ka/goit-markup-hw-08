@@ -33,12 +33,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background: $primary-bg-color;
-  
-  @media screen and (min-width: 1200px){
-    max-width: 528px;
-    height: 581px;    
-  }
 
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__form {
@@ -47,26 +46,21 @@
   margin: 0 40px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
-    
   }
-
-
-  
 }
 .modal__details {
   margin: 40px 0 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.50;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     line-height: 1.15;
-    
   }
 }
 
@@ -102,8 +96,6 @@
 
 .modal__input {
   width: 100%;
-  
-  // padding: 12px 0 12px 42px;
   padding: 11px 0 11px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -136,7 +128,6 @@
   resize: none;
   padding: 12px 16px;
   width: 100%;
-  // width: 448px;
   height: 120px;
   left: 576px;
   top: 518px;
@@ -155,15 +146,11 @@
   }
 }
 
-
 .checkbox__label {
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     display: inline-flex;
     align-items: center;
-    
   }
-
-  
 }
 
 .checkbox__input {
@@ -180,7 +167,7 @@
 
 .checkbox__svg {
   &::before {
-    content: "";
+    content: '';
     display: inline-block;
     margin-right: 7px;
     height: 15px;
@@ -196,7 +183,7 @@
     + .checkbox__svg {
       &::before {
         background-color: $accent-color;
-        background-image: url("../image/icon.svg");
+        background-image: url('../image/icon.svg');
         border-color: $accent-color;
         background-origin: border-box;
         background-size: contain;
@@ -213,26 +200,23 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-     text-decoration-line: underline;
+  text-decoration-line: underline;
   color: $accent-color;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
-    
   }
 }
 .checkbox__consent {
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: $primary-text-color;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
-    
   }
 }

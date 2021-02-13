@@ -1,53 +1,35 @@
 .project {
-  
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
   margin-bottom: 30px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
-    // display: flex;
-    // flex-wrap: wrap;
-    // // margin: -15px;
-    
   }
-  
 }
 .partition {
-  margin: auto;  
+  margin: auto;
   margin-bottom: 30px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin: 15px;
-    width: calc((100% - 15px*4) / 2);    
-    
+    width: calc((100% - 15px * 4) / 2);
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin: 15px;
-    width: calc((100% - 15px*6) / 3);    
-    
+    width: calc((100% - 15px * 6) / 3);
   }
-  // display: flex;
-  // width: calc((100% - 60px) / 3);
-  // margin-right: 30px;
-  // margin-bottom: 30px;
 }
-
-
 
 .partition:nth-child(3n) {
-
-  @media screen and (min-width: 1200px){
-    margin-right: 0;   
-    
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
   }
-  
 }
 .partition:nth-last-child(-n + 3) {
-  @media screen and (min-width: 1200px){
-    margin-bottom: 0;      
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
-  
 }
 
 .partition__overley {
@@ -72,7 +54,6 @@
 }
 
 .partition__unit {
-  // width: 370px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;

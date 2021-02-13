@@ -1,11 +1,10 @@
 .work {
   display: none;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 1200px) {
+    display: block;
     padding: 0 0 94px;
   }
-
-   
 }
 .work-title {
   margin-top: 0;
@@ -18,16 +17,20 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
+.kinds {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+}
 
 .kinds__foto {
-  // display: flex;
   position: relative;
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
 
 .kinds__text {
-  // display: inline-block;
   position: absolute;
   margin: 0;
   width: 100%;
