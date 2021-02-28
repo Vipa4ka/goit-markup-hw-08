@@ -11,6 +11,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 section {
@@ -159,6 +160,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .menu-conteiner {
+    z-index: 1;
     display: none;
     text-align: center;
     background-color: #ffffff;
@@ -265,7 +267,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .siteNav__link--active::after {
-    top: 46px;
+    top: 44px;
   }
 }
 
@@ -463,7 +465,8 @@ button {
 }
 
 .partition {
-  margin: auto;
+  width: calc((100% - 2 * 15px) / 1);
+  margin: 15px;
   margin-bottom: 30px;
 }
 
@@ -499,6 +502,13 @@ button {
   display: flex;
   position: relative;
   overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 294px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .partition__hover {

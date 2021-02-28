@@ -11,6 +11,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 section {
@@ -159,6 +160,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .menu-conteiner {
+    z-index: 1;
     display: none;
     text-align: center;
     background-color: #ffffff;
@@ -265,7 +267,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .siteNav__link--active::after {
-    top: 46px;
+    top: 44px;
   }
 }
 
@@ -641,15 +643,52 @@ button {
 
 /* ------------Герой----------------------- */
 .hero {
-  max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 118px 60px;
   text-align: center;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/heroy.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/heroy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../photo/bg/bg_img480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../photo/bg/bg_img480.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../photo/bg/bg_img@2x480.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../photo/bg/bg_img@2x480.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 204px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../photo/bg/bg_img768.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../photo/bg/bg_img768.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../photo/bg/bg_img@2x768.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../photo/bg/bg_img@2x768.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../photo/bg/bg_Img1600.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../photo/bg/bg_Img1600.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../photo/bg/bg_Img@2x1600.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../photo/bg/bg_Img@2x1600.jpg");
+  }
 }
 
 .hero-title {
@@ -782,8 +821,8 @@ button {
 
 .kinds__foto {
   position: relative;
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
+  width: calc((100% - 6 * 15px) / 3);
+  margin: 15px;
 }
 
 .kinds__text {
@@ -843,7 +882,12 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__link {
+    margin: -15px;
+  }
 }
 
 .team__card {
