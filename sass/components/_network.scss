@@ -1,12 +1,11 @@
 .network {
-  
   display: flex;
-  width: 206px;  
+  // width: 206px;
+  justify-content: center;
 }
 
-.footer{
+.footer {
   margin: auto;
-
 }
 .network__margin:not(:last-child) {
   margin-right: 10px;
